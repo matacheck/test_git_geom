@@ -129,6 +129,7 @@ SET(GOOD_TESTS
   viewing_geom_objs_ex02.py
   viewing_geom_objs_ex03.py
   viewing_geom_objs_ex04.py
+  viewing_geom_objs_ex05.py
   whatis.py
   working_with_groups_ex01.py
   working_with_groups_ex02.py

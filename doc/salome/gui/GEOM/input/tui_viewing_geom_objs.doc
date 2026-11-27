@@ -18,4 +18,8 @@
 <br><h2>Set Point Marker</h2>
 \tui_script{viewing_geom_objs_ex04.py}
 
+\anchor tui_change_width
+<br><h2>Changing Edges and Iso-lines Width</h2>
+\tui_script{viewing_geom_objs_ex05.py}
+
 */

@@ -50,6 +50,8 @@ public:
   GEOMGUI_EXPORT void setColor( const char* theEntry, int theRed, int theGreen, int theBlue, bool theUpdateViewer = true );
   GEOMGUI_EXPORT void setTransparency( const char* theEntry, float theTransparency, bool theUpdateViewer = true );
   GEOMGUI_EXPORT void setIsos( const char* theEntry, int theNbU, int theNbV, bool theUpdateViewer = true );
+  GEOMGUI_EXPORT void setEdgeWidth( const char* theEntry, int theWidth, bool theUpdateViewer = true );
+  GEOMGUI_EXPORT void setIsosWidth( const char* theEntry, int theWidth, bool theUpdateViewer = true );
   GEOMGUI_EXPORT void setDeflection( const char* theEntry, float theDeflection, bool theUpdateViewer = true );
   GEOMGUI_EXPORT void setMaterial( const char* theEntry, const char* theMaterial, bool theUpdateViewer = true );
   GEOMGUI_EXPORT void setMaterialProperty( const char* theEntry, const char* theMaterial, bool theUpdateViewer = true );

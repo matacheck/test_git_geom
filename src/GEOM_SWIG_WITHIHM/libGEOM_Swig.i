@@ -77,6 +77,8 @@ class GEOM_Swig
   void setColor( const char* theEntry, int theRed, int theGreen, int theBlue, bool theUpdateViewer = true );
   void setTransparency( const char* theEntry, float theTransparency, bool theUpdateViewer = true );
   void setIsos( const char* theEntry, int theNbU, int theNbV, bool theUpdateViewer = true );
+  void setEdgeWidth( const char* theEntry, int theWidth, bool theUpdateViewer = true );
+  void setIsosWidth( const char* theEntry, int theWidth, bool theUpdateViewer = true );
   void setDeflection( const char* theEntry, float theDeflection, bool theUpdateViewer = true );
   void setMaterial( const char* theEntry, const char* theMaterial, bool theUpdateViewer = true );
   void setMaterialProperty( const char* theEntry, const char* theMaterial, bool theUpdateViewer = true );

@@ -463,6 +463,30 @@ void GEOM_Swig::setIsos( const char* theEntry, int theNbU, int theNbV, bool theU
 }
 
 /*!
+  \brief Set width of the edges of the presentation
+  \param theEntry geometry object's entry
+  \param theWidth line width (integer value >= 1)
+  \param theUpdateViewer \c true to update active view's contents
+*/
+void GEOM_Swig::setEdgeWidth( const char* theEntry, int theWidth, bool theUpdateViewer )
+{
+  ProcessVoidEvent( new TSetPropertyEvent( theEntry, GEOM::propertyName( GEOM::LineWidth ),
+                                           qMax( theWidth, 1 ), theUpdateViewer ) );
+}
+
+/*!
+  \brief Set width of the iso-lines of the presentation
+  \param theEntry geometry object's entry
+  \param theWidth line width (integer value >= 1)
+  \param theUpdateViewer \c true to update active view's contents
+*/
+void GEOM_Swig::setIsosWidth( const char* theEntry, int theWidth, bool theUpdateViewer )
+{
+  ProcessVoidEvent( new TSetPropertyEvent( theEntry, GEOM::propertyName( GEOM::IsosWidth ),
+                                           qMax( theWidth, 1 ), theUpdateViewer ) );
+}
+
+/*!
   \brief Set transparency of the presentation
   \param theEntry geometry object's entry
   \param theTransparency transparency (floating point value between 0 and 1)
